@@ -1,0 +1,47 @@
+Components needed:
+- InvoiceTable
+    - InvoiceTableHeader
+    - InvoiceTableRow
+        - EditableRowModeButtons
+        - EditableDescriptionCell
+        - EditableRateCell
+        - EditableHoursCell
+    - InvoiceTableAddButton
+
+State Values:
+- Each row description, rate, hours
+    - Store in InvoiceTableRow
+- Edit mode for each row 
+    - Store in InvoiceTableRow
+- Initial data - not state
+- Continuing data list - will be state 
+    - Store in InvoiceTable
+- Total cost - not state b/c it's derived from existing state values
+
+
+Building an Express App in React
+
+Installed packages
+Setup boilerplate
+Adjusted dev script in package.json
+
+Plan out Endpoint functionality
+
+- GET data
+    - Get a list of all invoices in my database
+    - What should the endpoint look like? 
+        - http://localhost:8000/api/invoices
+    - Will it take queries, params, body? 
+        - Nope
+    - What do I want the response to look like 
+        - Should be an array of objects that I can iterate over on my front end 
+- ADD data
+    - What is the purpose?
+        - Duplicate AddInvoiceRow functionality from front end inside of an endpoint handler functionality
+    - What should the endpoint look like? 
+        - /api/invoice
+    - Will it take any queries/params/body?
+        - 
+
+- UPDATE data
+- DELETE data
